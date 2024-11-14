@@ -1,0 +1,55 @@
+
+
+
+
+
+
+
+
+
+
+
+def buat_ketupat(ukuran):
+    # Bagian atas ketupat
+    for i in range(ukuran):
+        print(" " * (ukuran - i - 1) + "*" * (2 * i + 2))
+        
+
+    # Bagian bawah ketupat
+    for i in range(ukuran - 2, -1, -1):
+        print(" " * (ukuran - i - 1) + "*" * (2 * i + 2))
+
+# Input ukuran dari pengguna
+try:
+    ukuran = int(input("Masukkan ukuran ketupat: "))
+    if ukuran > 0:
+        buat_ketupat(ukuran)
+    else:
+        print("Ukuran harus bilangan bulat positif.")
+except ValueError:
+    print("Masukkan bilangan bulat yang valid.")
+
+   
+# PERSEGI      
+def buat_persegi(luas):
+    for a in range(luas):
+        print("="* luas* 2)
+try:
+    luas = int(input("masukan luas persegi: "))
+    if luas >0:
+        buat_persegi(luas)
+    else:
+        print("luas harus bilangan positif")
+except ValueError:
+    print("masukan angka!!")
+
+
+
+
+
+
+
+
+
+    
+    
